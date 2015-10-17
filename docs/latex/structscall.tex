@@ -1,0 +1,44 @@
+\hypertarget{structscall}{\section{Referencia de la Estructura scall}
+\label{structscall}\index{scall@{scall}}
+}
+\subsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structscall_ab6a91a0001e173df71ec9262b306e852}{pid}
+\item 
+int \hyperlink{structscall_a708ccbd2b58716d77b5dd6a1adabeea2}{instante}
+\item 
+int \hyperlink{structscall_a5d5553c85657a4e8df8abee86a4817c0}{resolucion}
+\item 
+char \hyperlink{structscall_a9f0b743b3846fe946abd6414035f91fb}{tipo} \mbox{[}4\mbox{]}
+\item 
+char \hyperlink{structscall_a67d17d647822c49caaad2f4b1953f2cd}{semaforo}
+\item 
+struct \hyperlink{structscall}{scall} $\ast$ \hyperlink{structscall_a7cce9b2960d49fc5047b164943a17849}{sig}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los campos}
+\hypertarget{structscall_a708ccbd2b58716d77b5dd6a1adabeea2}{\index{scall@{scall}!instante@{instante}}
+\index{instante@{instante}!scall@{scall}}
+\subsubsection[{instante}]{\setlength{\rightskip}{0pt plus 5cm}int scall\-::instante}}\label{structscall_a708ccbd2b58716d77b5dd6a1adabeea2}
+Instante de ocurrencia de la solicitud relativo al tiempo de ejecución del proceso \hypertarget{structscall_ab6a91a0001e173df71ec9262b306e852}{\index{scall@{scall}!pid@{pid}}
+\index{pid@{pid}!scall@{scall}}
+\subsubsection[{pid}]{\setlength{\rightskip}{0pt plus 5cm}int scall\-::pid}}\label{structscall_ab6a91a0001e173df71ec9262b306e852}
+P\-I\-D del proceso que solicita servicio \hypertarget{structscall_a5d5553c85657a4e8df8abee86a4817c0}{\index{scall@{scall}!resolucion@{resolucion}}
+\index{resolucion@{resolucion}!scall@{scall}}
+\subsubsection[{resolucion}]{\setlength{\rightskip}{0pt plus 5cm}int scall\-::resolucion}}\label{structscall_a5d5553c85657a4e8df8abee86a4817c0}
+Tiempo que toma resolver la solicitud de servicio \hypertarget{structscall_a67d17d647822c49caaad2f4b1953f2cd}{\index{scall@{scall}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!scall@{scall}}
+\subsubsection[{semaforo}]{\setlength{\rightskip}{0pt plus 5cm}char scall\-::semaforo}}\label{structscall_a67d17d647822c49caaad2f4b1953f2cd}
+char que almacena el semaforo asociado si el tipo es V o P \hypertarget{structscall_a7cce9b2960d49fc5047b164943a17849}{\index{scall@{scall}!sig@{sig}}
+\index{sig@{sig}!scall@{scall}}
+\subsubsection[{sig}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf scall}$\ast$ scall\-::sig}}\label{structscall_a7cce9b2960d49fc5047b164943a17849}
+Puntero al próximo System Call \hypertarget{structscall_a9f0b743b3846fe946abd6414035f91fb}{\index{scall@{scall}!tipo@{tipo}}
+\index{tipo@{tipo}!scall@{scall}}
+\subsubsection[{tipo}]{\setlength{\rightskip}{0pt plus 5cm}char scall\-::tipo\mbox{[}4\mbox{]}}}\label{structscall_a9f0b743b3846fe946abd6414035f91fb}
+Tipo de solicitud\-: S\-I\-O, V, P 
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8c}{main.\-c}\end{DoxyCompactItemize}

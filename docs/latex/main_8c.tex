@@ -1,0 +1,361 @@
+\hypertarget{main_8c}{\section{Referencia del Archivo main.\-c}
+\label{main_8c}\index{main.\-c@{main.\-c}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+\subsection*{Estructuras de datos}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structsemaforo}{semaforo}
+\item 
+struct \hyperlink{structproceso}{proceso}
+\item 
+struct \hyperlink{structevento}{evento}
+\item 
+struct \hyperlink{structscall}{scall}
+\item 
+struct \hyperlink{structprocesoIN}{proceso\-I\-N}
+\item 
+struct \hyperlink{structioIN}{io\-I\-N}
+\item 
+struct \hyperlink{structprecIN}{prec\-I\-N}
+\item 
+struct \hyperlink{structsysind}{sysind}
+\end{DoxyCompactItemize}
+\subsection*{'typedefs'}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structsemaforo}{semaforo} \hyperlink{main_8c_a7f48068cecf7596209cd66168a6b3b7b}{S\-E\-M\-A\-F\-O\-R\-O}
+\item 
+typedef \hyperlink{main_8c_a7f48068cecf7596209cd66168a6b3b7b}{S\-E\-M\-A\-F\-O\-R\-O} $\ast$ \hyperlink{main_8c_a1a51ced83bcd69590e0ff937b704c461}{S\-E\-M\-A\-F\-O\-R\-O\-S}
+\item 
+typedef struct \hyperlink{structproceso}{proceso} \hyperlink{main_8c_aedf4459c5d6ab78435f624d4bd6eb2be}{P\-R\-O\-C\-E\-S\-O}
+\item 
+typedef \hyperlink{main_8c_aedf4459c5d6ab78435f624d4bd6eb2be}{P\-R\-O\-C\-E\-S\-O} $\ast$ \hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S}
+\item 
+typedef struct \hyperlink{structevento}{evento} \hyperlink{main_8c_a155ec2884ea387316777240161aaaec1}{E\-V\-E\-N\-T\-O}
+\item 
+typedef \hyperlink{main_8c_a155ec2884ea387316777240161aaaec1}{E\-V\-E\-N\-T\-O} $\ast$ \hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S}
+\item 
+typedef struct \hyperlink{structscall}{scall} \hyperlink{main_8c_a3002dc26568aaf0f60cff5bfb578ed8a}{S\-C\-A\-L\-L}
+\item 
+typedef \hyperlink{main_8c_a3002dc26568aaf0f60cff5bfb578ed8a}{S\-C\-A\-L\-L} $\ast$ \hyperlink{main_8c_ad15da58dc1fa4eedb6bfbdc6d8a7071c}{S\-C\-A\-L\-L\-S}
+\item 
+typedef struct \hyperlink{structprocesoIN}{proceso\-I\-N} \hyperlink{main_8c_a5411d5ef61ea7ba506592efa3880e84b}{P\-R\-O\-C\-E\-S\-O\-I\-N}
+\item 
+typedef \hyperlink{main_8c_a5411d5ef61ea7ba506592efa3880e84b}{P\-R\-O\-C\-E\-S\-O\-I\-N} $\ast$ \hyperlink{main_8c_ae9c041e3b674e3e95ba433e5125caee7}{P\-R\-O\-C\-E\-S\-O\-S\-I\-N}
+\item 
+typedef struct \hyperlink{structioIN}{io\-I\-N} \hyperlink{main_8c_a24b891ec5c9b40c11f2b437d04a92941}{I\-O\-I\-N}
+\item 
+typedef \hyperlink{main_8c_a24b891ec5c9b40c11f2b437d04a92941}{I\-O\-I\-N} $\ast$ \hyperlink{main_8c_a6ef836f8b05b02f2d786d75a8671f8b7}{I\-O\-S\-I\-N}
+\item 
+typedef struct \hyperlink{structprecIN}{prec\-I\-N} \hyperlink{main_8c_ac08e0906f0646f91cd6f325f220297f9}{P\-R\-E\-C\-I\-N}
+\item 
+typedef \hyperlink{main_8c_ac08e0906f0646f91cd6f325f220297f9}{P\-R\-E\-C\-I\-N} $\ast$ \hyperlink{main_8c_a7f3d96d9a7d9319fe20d8d1dba6526a2}{P\-R\-E\-C\-S\-I\-N}
+\item 
+typedef struct \hyperlink{structsysind}{sysind} \hyperlink{main_8c_accfa997805d0389fb12727fa1b4e06ea}{S\-Y\-S\-I\-N\-D}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a618f02363b415bd8522450b2987df149}{insertar\-Evento} (\hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S} $\ast$eventos, \hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S} $\ast$e)
+\item 
+void \hyperlink{main_8c_a8bc53714af69aa8b77fe5ac34a3d033f}{mover\-Proceso} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} $\ast$destino, \hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} $\ast$origen, int pid)
+\item 
+void \hyperlink{main_8c_a373f43ae39a081be78214373343ddc5d}{mostrar\-Procesos} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} procesos)
+\item 
+\hyperlink{main_8c_a1a51ced83bcd69590e0ff937b704c461}{S\-E\-M\-A\-F\-O\-R\-O\-S} \hyperlink{main_8c_acdd93f7da2ded902df7ee21d84174abc}{obtener\-Semaforos} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} procesos, int pid)
+\item 
+void \hyperlink{main_8c_a59064b1fec1e4cfa6394ad4ae5b7ca8f}{simular} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} procesos, \hyperlink{main_8c_ad15da58dc1fa4eedb6bfbdc6d8a7071c}{S\-C\-A\-L\-L\-S} scs, \hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S} eventos, int pasoapaso, \hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} $\ast$rp, \hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S} $\ast$re, \hyperlink{main_8c_accfa997805d0389fb12727fa1b4e06ea}{S\-Y\-S\-I\-N\-D} $\ast$rs)
+\item 
+void \hyperlink{main_8c_a8dc634d7f2c305460d3e53cd297e1469}{escribir\-Resultados} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} p, \hyperlink{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{E\-V\-E\-N\-T\-O\-S} e, \hyperlink{main_8c_accfa997805d0389fb12727fa1b4e06ea}{S\-Y\-S\-I\-N\-D} s)
+\item 
+void \hyperlink{main_8c_adeb901890f8f07afb6322573a05934dc}{imprimir\-Ayuda} ()
+\item 
+int \hyperlink{main_8c_a86b6e73a12ec5268c6d2f764b6b19643}{comprobar\-Parametros} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{main_8c_a2fef611af54172ea114e4d20cdcc2c7f}{cargar\-Archivos} (char $\ast$p, char $\ast$io, char $\ast$prec, \hyperlink{main_8c_ae9c041e3b674e3e95ba433e5125caee7}{P\-R\-O\-C\-E\-S\-O\-S\-I\-N} $\ast$procesos, \hyperlink{main_8c_a6ef836f8b05b02f2d786d75a8671f8b7}{I\-O\-S\-I\-N} $\ast$ios, \hyperlink{main_8c_a7f3d96d9a7d9319fe20d8d1dba6526a2}{P\-R\-E\-C\-S\-I\-N} $\ast$precs)
+\item 
+\hyperlink{main_8c_ad15da58dc1fa4eedb6bfbdc6d8a7071c}{S\-C\-A\-L\-L\-S} \hyperlink{main_8c_a2f5894c98346b2b9be2d9419379a14b8}{system\-Calls} (\hyperlink{main_8c_a688260058a6b9c7299f897ccb05b5c95}{P\-R\-O\-C\-E\-S\-O\-S} procesos, \hyperlink{main_8c_a6ef836f8b05b02f2d786d75a8671f8b7}{I\-O\-S\-I\-N} ios)
+\item 
+\hyperlink{main_8c_a1a51ced83bcd69590e0ff937b704c461}{S\-E\-M\-A\-F\-O\-R\-O\-S} \hyperlink{main_8c_acd4424fa31ce9e51d4f27de8eb54b8f0}{cargar\-Semaforos} (\hyperlink{main_8c_a7f3d96d9a7d9319fe20d8d1dba6526a2}{P\-R\-E\-C\-S\-I\-N} precs\-I\-N, int pid)
+\item 
+int \hyperlink{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+
+
+\subsection{Documentación de los 'typedefs'}
+\hypertarget{main_8c_a155ec2884ea387316777240161aaaec1}{\index{main.\-c@{main.\-c}!E\-V\-E\-N\-T\-O@{E\-V\-E\-N\-T\-O}}
+\index{E\-V\-E\-N\-T\-O@{E\-V\-E\-N\-T\-O}!main.c@{main.\-c}}
+\subsubsection[{E\-V\-E\-N\-T\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-V\-E\-N\-T\-O}}}\label{main_8c_a155ec2884ea387316777240161aaaec1}
+Estructura para alamacenar un evento de ocurrencia en la simulación \hypertarget{main_8c_a0fb6e405bfaf6969650fb28c723a8050}{\index{main.\-c@{main.\-c}!E\-V\-E\-N\-T\-O\-S@{E\-V\-E\-N\-T\-O\-S}}
+\index{E\-V\-E\-N\-T\-O\-S@{E\-V\-E\-N\-T\-O\-S}!main.c@{main.\-c}}
+\subsubsection[{E\-V\-E\-N\-T\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-V\-E\-N\-T\-O\-S}}}\label{main_8c_a0fb6e405bfaf6969650fb28c723a8050}
+Lista dinámica de eventos \hypertarget{main_8c_a24b891ec5c9b40c11f2b437d04a92941}{\index{main.\-c@{main.\-c}!I\-O\-I\-N@{I\-O\-I\-N}}
+\index{I\-O\-I\-N@{I\-O\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{I\-O\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-O\-I\-N}}}\label{main_8c_a24b891ec5c9b40c11f2b437d04a92941}
+Estructura para leer una línea del archivo de entrada de I/\-O (input) \hypertarget{main_8c_a6ef836f8b05b02f2d786d75a8671f8b7}{\index{main.\-c@{main.\-c}!I\-O\-S\-I\-N@{I\-O\-S\-I\-N}}
+\index{I\-O\-S\-I\-N@{I\-O\-S\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{I\-O\-S\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-O\-S\-I\-N}}}\label{main_8c_a6ef836f8b05b02f2d786d75a8671f8b7}
+Lista dinámica de I/\-Os de entrada \hypertarget{main_8c_ac08e0906f0646f91cd6f325f220297f9}{\index{main.\-c@{main.\-c}!P\-R\-E\-C\-I\-N@{P\-R\-E\-C\-I\-N}}
+\index{P\-R\-E\-C\-I\-N@{P\-R\-E\-C\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-E\-C\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-E\-C\-I\-N}}}\label{main_8c_ac08e0906f0646f91cd6f325f220297f9}
+Estructura para leer una línea del archivo de entrada de Precedencia (input) \hypertarget{main_8c_a7f3d96d9a7d9319fe20d8d1dba6526a2}{\index{main.\-c@{main.\-c}!P\-R\-E\-C\-S\-I\-N@{P\-R\-E\-C\-S\-I\-N}}
+\index{P\-R\-E\-C\-S\-I\-N@{P\-R\-E\-C\-S\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-E\-C\-S\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-E\-C\-S\-I\-N}}}\label{main_8c_a7f3d96d9a7d9319fe20d8d1dba6526a2}
+Lista dinámica de reglas de precedencia de entrada \hypertarget{main_8c_aedf4459c5d6ab78435f624d4bd6eb2be}{\index{main.\-c@{main.\-c}!P\-R\-O\-C\-E\-S\-O@{P\-R\-O\-C\-E\-S\-O}}
+\index{P\-R\-O\-C\-E\-S\-O@{P\-R\-O\-C\-E\-S\-O}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-O\-C\-E\-S\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-C\-E\-S\-O}}}\label{main_8c_aedf4459c5d6ab78435f624d4bd6eb2be}
+Estructura para alamcenar un proceso que este activo en el sistema \hypertarget{main_8c_a5411d5ef61ea7ba506592efa3880e84b}{\index{main.\-c@{main.\-c}!P\-R\-O\-C\-E\-S\-O\-I\-N@{P\-R\-O\-C\-E\-S\-O\-I\-N}}
+\index{P\-R\-O\-C\-E\-S\-O\-I\-N@{P\-R\-O\-C\-E\-S\-O\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-O\-C\-E\-S\-O\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-C\-E\-S\-O\-I\-N}}}\label{main_8c_a5411d5ef61ea7ba506592efa3880e84b}
+Estructura para leer una línea del archivo de entrada de procesos (input) \hypertarget{main_8c_a688260058a6b9c7299f897ccb05b5c95}{\index{main.\-c@{main.\-c}!P\-R\-O\-C\-E\-S\-O\-S@{P\-R\-O\-C\-E\-S\-O\-S}}
+\index{P\-R\-O\-C\-E\-S\-O\-S@{P\-R\-O\-C\-E\-S\-O\-S}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-O\-C\-E\-S\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-C\-E\-S\-O\-S}}}\label{main_8c_a688260058a6b9c7299f897ccb05b5c95}
+Lista dinámica de procesos \hypertarget{main_8c_ae9c041e3b674e3e95ba433e5125caee7}{\index{main.\-c@{main.\-c}!P\-R\-O\-C\-E\-S\-O\-S\-I\-N@{P\-R\-O\-C\-E\-S\-O\-S\-I\-N}}
+\index{P\-R\-O\-C\-E\-S\-O\-S\-I\-N@{P\-R\-O\-C\-E\-S\-O\-S\-I\-N}!main.c@{main.\-c}}
+\subsubsection[{P\-R\-O\-C\-E\-S\-O\-S\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\-R\-O\-C\-E\-S\-O\-S\-I\-N}}}\label{main_8c_ae9c041e3b674e3e95ba433e5125caee7}
+Lista dinámica de procesos de entrada \hypertarget{main_8c_a3002dc26568aaf0f60cff5bfb578ed8a}{\index{main.\-c@{main.\-c}!S\-C\-A\-L\-L@{S\-C\-A\-L\-L}}
+\index{S\-C\-A\-L\-L@{S\-C\-A\-L\-L}!main.c@{main.\-c}}
+\subsubsection[{S\-C\-A\-L\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-C\-A\-L\-L}}}\label{main_8c_a3002dc26568aaf0f60cff5bfb578ed8a}
+Estructura para almacenar un System Call \hypertarget{main_8c_ad15da58dc1fa4eedb6bfbdc6d8a7071c}{\index{main.\-c@{main.\-c}!S\-C\-A\-L\-L\-S@{S\-C\-A\-L\-L\-S}}
+\index{S\-C\-A\-L\-L\-S@{S\-C\-A\-L\-L\-S}!main.c@{main.\-c}}
+\subsubsection[{S\-C\-A\-L\-L\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-C\-A\-L\-L\-S}}}\label{main_8c_ad15da58dc1fa4eedb6bfbdc6d8a7071c}
+Lista dinámica de System Calls \hypertarget{main_8c_a7f48068cecf7596209cd66168a6b3b7b}{\index{main.\-c@{main.\-c}!S\-E\-M\-A\-F\-O\-R\-O@{S\-E\-M\-A\-F\-O\-R\-O}}
+\index{S\-E\-M\-A\-F\-O\-R\-O@{S\-E\-M\-A\-F\-O\-R\-O}!main.c@{main.\-c}}
+\subsubsection[{S\-E\-M\-A\-F\-O\-R\-O}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-E\-M\-A\-F\-O\-R\-O}}}\label{main_8c_a7f48068cecf7596209cd66168a6b3b7b}
+Estructura para almacenar un semaforo \hypertarget{main_8c_a1a51ced83bcd69590e0ff937b704c461}{\index{main.\-c@{main.\-c}!S\-E\-M\-A\-F\-O\-R\-O\-S@{S\-E\-M\-A\-F\-O\-R\-O\-S}}
+\index{S\-E\-M\-A\-F\-O\-R\-O\-S@{S\-E\-M\-A\-F\-O\-R\-O\-S}!main.c@{main.\-c}}
+\subsubsection[{S\-E\-M\-A\-F\-O\-R\-O\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-E\-M\-A\-F\-O\-R\-O\-S}}}\label{main_8c_a1a51ced83bcd69590e0ff937b704c461}
+Lista dinámica de semáforos Cada proceso tendrá asoiciado una lista de semáforos \hypertarget{main_8c_accfa997805d0389fb12727fa1b4e06ea}{\index{main.\-c@{main.\-c}!S\-Y\-S\-I\-N\-D@{S\-Y\-S\-I\-N\-D}}
+\index{S\-Y\-S\-I\-N\-D@{S\-Y\-S\-I\-N\-D}!main.c@{main.\-c}}
+\subsubsection[{S\-Y\-S\-I\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-Y\-S\-I\-N\-D}}}\label{main_8c_accfa997805d0389fb12727fa1b4e06ea}
+Estructura para almacenar información de indicadores del sistema 
+
+\subsection{Documentación de las funciones}
+\hypertarget{main_8c_a2fef611af54172ea114e4d20cdcc2c7f}{\index{main.\-c@{main.\-c}!cargar\-Archivos@{cargar\-Archivos}}
+\index{cargar\-Archivos@{cargar\-Archivos}!main.c@{main.\-c}}
+\subsubsection[{cargar\-Archivos}]{\setlength{\rightskip}{0pt plus 5cm}int cargar\-Archivos (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p, }
+\item[{char $\ast$}]{io, }
+\item[{char $\ast$}]{prec, }
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S\-I\-N} $\ast$}]{procesos, }
+\item[{{\bf I\-O\-S\-I\-N} $\ast$}]{ios, }
+\item[{{\bf P\-R\-E\-C\-S\-I\-N} $\ast$}]{precs}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a2fef611af54172ea114e4d20cdcc2c7f}
+Carga los archivos de texto a lista dinámicas para ser utilizados por el sistema. 
+\begin{DoxyParams}{Parámetros}
+{\em p} & Ruta del archivo de entrada de Procesos \\
+\hline
+{\em io} & Ruta del archivo de entrada de I/\-O \\
+\hline
+{\em prec} & Ruta del archivo de entrada de Precedencia \\
+\hline
+{\em procesos} & Lista dinámica donde se cargan los Procesos \\
+\hline
+{\em ios} & Lista dinámica donde se cargan las I/\-O \\
+\hline
+{\em precs} & Lista dinámica donde se carga la Precedencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve 1 si se cargaron los 3 archivos de forma correcta o 0 (cero) en otro caso 
+\end{DoxyReturn}
+\hypertarget{main_8c_acd4424fa31ce9e51d4f27de8eb54b8f0}{\index{main.\-c@{main.\-c}!cargar\-Semaforos@{cargar\-Semaforos}}
+\index{cargar\-Semaforos@{cargar\-Semaforos}!main.c@{main.\-c}}
+\subsubsection[{cargar\-Semaforos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-E\-M\-A\-F\-O\-R\-O\-S} cargar\-Semaforos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-E\-C\-S\-I\-N}}]{precs\-I\-N, }
+\item[{int}]{pid}
+\end{DoxyParamCaption}
+)}}\label{main_8c_acd4424fa31ce9e51d4f27de8eb54b8f0}
+A partir del archivo de Precedencia y un P\-I\-D se generan los semaforos asociados al proceso 
+\begin{DoxyParams}{Parámetros}
+{\em precs\-I\-N} & Lista de Precedencia de los procesos. \\
+\hline
+{\em pid} & P\-I\-D del proceso del cual quiero obtener los semáforos asociados. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una lista de semáforos asociados al P\-I\-D. 
+\end{DoxyReturn}
+\hypertarget{main_8c_a86b6e73a12ec5268c6d2f764b6b19643}{\index{main.\-c@{main.\-c}!comprobar\-Parametros@{comprobar\-Parametros}}
+\index{comprobar\-Parametros@{comprobar\-Parametros}!main.c@{main.\-c}}
+\subsubsection[{comprobar\-Parametros}]{\setlength{\rightskip}{0pt plus 5cm}int comprobar\-Parametros (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a86b6e73a12ec5268c6d2f764b6b19643}
+Comprueba los parámetros de entrada del sistema. Entre las comprobaciones que realiza controla la cantidad, la validez y si algun parámetro esta repetido. 
+\begin{DoxyParams}{Parámetros}
+{\em argc} & Cantidad de argumentos recibidos en la ejecución \\
+\hline
+{\em argv} & Arreglo con los argumentos recibidos en la ejecución \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve 1 si se comprueban los parámetros correctamente o 0 (cero) en otro caso 
+\end{DoxyReturn}
+\hypertarget{main_8c_a8dc634d7f2c305460d3e53cd297e1469}{\index{main.\-c@{main.\-c}!escribir\-Resultados@{escribir\-Resultados}}
+\index{escribir\-Resultados@{escribir\-Resultados}!main.c@{main.\-c}}
+\subsubsection[{escribir\-Resultados}]{\setlength{\rightskip}{0pt plus 5cm}void escribir\-Resultados (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S}}]{p, }
+\item[{{\bf E\-V\-E\-N\-T\-O\-S}}]{e, }
+\item[{{\bf S\-Y\-S\-I\-N\-D}}]{s}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a8dc634d7f2c305460d3e53cd297e1469}
+Escribe los resultados de la simulación a archivos de texto. 
+\begin{DoxyParams}{Parámetros}
+{\em p} & Lista de procesos \\
+\hline
+{\em e} & Lista de eventos \\
+\hline
+{\em s} & Estructura de Indicadores del Sistema \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_adeb901890f8f07afb6322573a05934dc}{\index{main.\-c@{main.\-c}!imprimir\-Ayuda@{imprimir\-Ayuda}}
+\index{imprimir\-Ayuda@{imprimir\-Ayuda}!main.c@{main.\-c}}
+\subsubsection[{imprimir\-Ayuda}]{\setlength{\rightskip}{0pt plus 5cm}void imprimir\-Ayuda (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8c_adeb901890f8f07afb6322573a05934dc}
+Imprime la ayuda del sistema. La ayuda se ejecuta con el parámetro -\/h o --help pasado como argumento del programa en su ejecución \hypertarget{main_8c_a618f02363b415bd8522450b2987df149}{\index{main.\-c@{main.\-c}!insertar\-Evento@{insertar\-Evento}}
+\index{insertar\-Evento@{insertar\-Evento}!main.c@{main.\-c}}
+\subsubsection[{insertar\-Evento}]{\setlength{\rightskip}{0pt plus 5cm}void insertar\-Evento (
+\begin{DoxyParamCaption}
+\item[{{\bf E\-V\-E\-N\-T\-O\-S} $\ast$}]{eventos, }
+\item[{{\bf E\-V\-E\-N\-T\-O\-S} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a618f02363b415bd8522450b2987df149}
+Inserta un evento en la lista de eventos a procesar por el simulador. 
+\begin{DoxyParams}{Parámetros}
+{\em eventos} & Lista de eventos del simulador \\
+\hline
+{\em e} & Evento nuevo a ingresar \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}{\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97}
+Función principal del programa. 
+\begin{DoxyParams}{Parámetros}
+{\em argc} & Cantidad de argumentos recibidos en la ejecución \\
+\hline
+{\em argv} & Arreglo con los argumentos recibidos en la ejecución \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve 0 (cero) si el programa finaliza con éxito 
+\end{DoxyReturn}
+\hypertarget{main_8c_a373f43ae39a081be78214373343ddc5d}{\index{main.\-c@{main.\-c}!mostrar\-Procesos@{mostrar\-Procesos}}
+\index{mostrar\-Procesos@{mostrar\-Procesos}!main.c@{main.\-c}}
+\subsubsection[{mostrar\-Procesos}]{\setlength{\rightskip}{0pt plus 5cm}void mostrar\-Procesos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S}}]{procesos}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a373f43ae39a081be78214373343ddc5d}
+Muestra los P\-I\-D de los procesos de una lista de procesos. 
+\begin{DoxyParams}{Parámetros}
+{\em procesos} & Lista de procesos a mostrar \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_a8bc53714af69aa8b77fe5ac34a3d033f}{\index{main.\-c@{main.\-c}!mover\-Proceso@{mover\-Proceso}}
+\index{mover\-Proceso@{mover\-Proceso}!main.c@{main.\-c}}
+\subsubsection[{mover\-Proceso}]{\setlength{\rightskip}{0pt plus 5cm}void mover\-Proceso (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S} $\ast$}]{destino, }
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S} $\ast$}]{origen, }
+\item[{int}]{pid}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a8bc53714af69aa8b77fe5ac34a3d033f}
+Mueve un proceso de una cola de origen hacia una cola de destino. Dentro de las colas de procesos tanto de origen como de destino tambien se tiene en cuenta al cpu como una cola de un único proceso. 
+\begin{DoxyParams}{Parámetros}
+{\em destino} & Cola destino a la que hay que agregar el proceso \\
+\hline
+{\em origen} & Cola origen de la que hay que quitar el proceso \\
+\hline
+{\em pid} & En el caso que el pid sea 0 (cero) moverá de origen el primer elemento, de lo contrario buscara el pid y ese es el que moverá \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_acdd93f7da2ded902df7ee21d84174abc}{\index{main.\-c@{main.\-c}!obtener\-Semaforos@{obtener\-Semaforos}}
+\index{obtener\-Semaforos@{obtener\-Semaforos}!main.c@{main.\-c}}
+\subsubsection[{obtener\-Semaforos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-E\-M\-A\-F\-O\-R\-O\-S} obtener\-Semaforos (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S}}]{procesos, }
+\item[{int}]{pid}
+\end{DoxyParamCaption}
+)}}\label{main_8c_acdd93f7da2ded902df7ee21d84174abc}
+Devuelve una lista de semáforos asociados a un proceso determinado por su P\-I\-D. 
+\begin{DoxyParams}{Parámetros}
+{\em procesos} & Lista de procesos activos donde buscar \\
+\hline
+{\em pid} & P\-I\-D del proceso del que se quieren obtener los semáforos asociados \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una lista de semáforos 
+\end{DoxyReturn}
+\hypertarget{main_8c_a59064b1fec1e4cfa6394ad4ae5b7ca8f}{\index{main.\-c@{main.\-c}!simular@{simular}}
+\index{simular@{simular}!main.c@{main.\-c}}
+\subsubsection[{simular}]{\setlength{\rightskip}{0pt plus 5cm}void simular (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S}}]{procesos, }
+\item[{{\bf S\-C\-A\-L\-L\-S}}]{scs, }
+\item[{{\bf E\-V\-E\-N\-T\-O\-S}}]{eventos, }
+\item[{int}]{pasoapaso, }
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S} $\ast$}]{rp, }
+\item[{{\bf E\-V\-E\-N\-T\-O\-S} $\ast$}]{re, }
+\item[{{\bf S\-Y\-S\-I\-N\-D} $\ast$}]{rs}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a59064b1fec1e4cfa6394ad4ae5b7ca8f}
+L\-Leva adelante la simulación de la ejecución de los procesos de forma concurrente.
+
+
+\begin{DoxyParams}{Parámetros}
+{\em procesos} & Lista dinámica de los procesos que se van a simular \\
+\hline
+{\em scs} & Lista dinámica de los System Call que se van a simular \\
+\hline
+{\em eventos} & Lista incial de eventos que se van a simular \\
+\hline
+{\em pasoapaso} & Contiene 1 si se debe mostrar paso a paso la simulación, de lo contrario 0 (cero) \\
+\hline
+{\em $\ast$rp} & Puntero a una lista de procesos (de salida) \\
+\hline
+{\em $\ast$re} & Puntero a una lista de eventos (de salida) \\
+\hline
+{\em $\ast$rs} & Puntero a una lista de S\-Y\-S\-I\-N\-D (de salida) \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8c_a2f5894c98346b2b9be2d9419379a14b8}{\index{main.\-c@{main.\-c}!system\-Calls@{system\-Calls}}
+\index{system\-Calls@{system\-Calls}!main.c@{main.\-c}}
+\subsubsection[{system\-Calls}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-C\-A\-L\-L\-S} system\-Calls (
+\begin{DoxyParamCaption}
+\item[{{\bf P\-R\-O\-C\-E\-S\-O\-S}}]{procesos, }
+\item[{{\bf I\-O\-S\-I\-N}}]{ios}
+\end{DoxyParamCaption}
+)}}\label{main_8c_a2f5894c98346b2b9be2d9419379a14b8}
+Crea la lista de System Calls para ser utilizada durante la simulación. 
+\begin{DoxyParams}{Parámetros}
+{\em procesos} & Lista de procesos con la información de sincronización \\
+\hline
+{\em ios} & Lista de I/\-O de los procesos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve una lista de System Calls 
+\end{DoxyReturn}

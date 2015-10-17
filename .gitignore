@@ -1,0 +1,6 @@
+.project
+.cproject
+Debug/
+Doxyfile
+core
+*~

@@ -1,0 +1,808 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Simulador de Planificador de Corto Plazo: Referencia del Archivo main.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Simulador de Planificador de Corto Plazo
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Simulación de de la ejecución de procesos en un entorno monoprocesador con sincronización</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Globales</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Estructuras de Datos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estructuras de datos</a> &#124;
+<a href="#typedef-members">'typedefs'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo main.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsemaforo.html">semaforo</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structproceso.html">proceso</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structevento.html">evento</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structscall.html">scall</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprocesoIN.html">procesoIN</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structioIN.html">ioIN</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structprecIN.html">precIN</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsysind.html">sysind</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="typedef-members"></a>
+'typedefs'</h2></td></tr>
+<tr class="memitem:a7f48068cecf7596209cd66168a6b3b7b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structsemaforo.html">semaforo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a7f48068cecf7596209cd66168a6b3b7b">SEMAFORO</a></td></tr>
+<tr class="memitem:a1a51ced83bcd69590e0ff937b704c461"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#a7f48068cecf7596209cd66168a6b3b7b">SEMAFORO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a></td></tr>
+<tr class="memitem:aedf4459c5d6ab78435f624d4bd6eb2be"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structproceso.html">proceso</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#aedf4459c5d6ab78435f624d4bd6eb2be">PROCESO</a></td></tr>
+<tr class="memitem:a688260058a6b9c7299f897ccb05b5c95"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#aedf4459c5d6ab78435f624d4bd6eb2be">PROCESO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a></td></tr>
+<tr class="memitem:a155ec2884ea387316777240161aaaec1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structevento.html">evento</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a155ec2884ea387316777240161aaaec1">EVENTO</a></td></tr>
+<tr class="memitem:a0fb6e405bfaf6969650fb28c723a8050"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#a155ec2884ea387316777240161aaaec1">EVENTO</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a></td></tr>
+<tr class="memitem:a3002dc26568aaf0f60cff5bfb578ed8a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structscall.html">scall</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a3002dc26568aaf0f60cff5bfb578ed8a">SCALL</a></td></tr>
+<tr class="memitem:ad15da58dc1fa4eedb6bfbdc6d8a7071c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#a3002dc26568aaf0f60cff5bfb578ed8a">SCALL</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a></td></tr>
+<tr class="memitem:a5411d5ef61ea7ba506592efa3880e84b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structprocesoIN.html">procesoIN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a5411d5ef61ea7ba506592efa3880e84b">PROCESOIN</a></td></tr>
+<tr class="memitem:ae9c041e3b674e3e95ba433e5125caee7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#a5411d5ef61ea7ba506592efa3880e84b">PROCESOIN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ae9c041e3b674e3e95ba433e5125caee7">PROCESOSIN</a></td></tr>
+<tr class="memitem:a24b891ec5c9b40c11f2b437d04a92941"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structioIN.html">ioIN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a24b891ec5c9b40c11f2b437d04a92941">IOIN</a></td></tr>
+<tr class="memitem:a6ef836f8b05b02f2d786d75a8671f8b7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#a24b891ec5c9b40c11f2b437d04a92941">IOIN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a></td></tr>
+<tr class="memitem:ac08e0906f0646f91cd6f325f220297f9"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structprecIN.html">precIN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#ac08e0906f0646f91cd6f325f220297f9">PRECIN</a></td></tr>
+<tr class="memitem:a7f3d96d9a7d9319fe20d8d1dba6526a2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="main_8c.html#ac08e0906f0646f91cd6f325f220297f9">PRECIN</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a></td></tr>
+<tr class="memitem:accfa997805d0389fb12727fa1b4e06ea"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structsysind.html">sysind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a618f02363b415bd8522450b2987df149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a618f02363b415bd8522450b2987df149">insertarEvento</a> (<a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *eventos, <a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *e)</td></tr>
+<tr class="memitem:a8bc53714af69aa8b77fe5ac34a3d033f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a8bc53714af69aa8b77fe5ac34a3d033f">moverProceso</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *destino, <a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *origen, int pid)</td></tr>
+<tr class="memitem:a373f43ae39a081be78214373343ddc5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a373f43ae39a081be78214373343ddc5d">mostrarProcesos</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> procesos)</td></tr>
+<tr class="memitem:acdd93f7da2ded902df7ee21d84174abc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#acdd93f7da2ded902df7ee21d84174abc">obtenerSemaforos</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> procesos, int pid)</td></tr>
+<tr class="memitem:a59064b1fec1e4cfa6394ad4ae5b7ca8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a59064b1fec1e4cfa6394ad4ae5b7ca8f">simular</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> procesos, <a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a> scs, <a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> eventos, int pasoapaso, <a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *rp, <a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *re, <a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a> *rs)</td></tr>
+<tr class="memitem:a8dc634d7f2c305460d3e53cd297e1469"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a8dc634d7f2c305460d3e53cd297e1469">escribirResultados</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> p, <a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> e, <a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a> s)</td></tr>
+<tr class="memitem:adeb901890f8f07afb6322573a05934dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#adeb901890f8f07afb6322573a05934dc">imprimirAyuda</a> ()</td></tr>
+<tr class="memitem:a86b6e73a12ec5268c6d2f764b6b19643"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a86b6e73a12ec5268c6d2f764b6b19643">comprobarParametros</a> (int argc, char *argv[])</td></tr>
+<tr class="memitem:a2fef611af54172ea114e4d20cdcc2c7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a2fef611af54172ea114e4d20cdcc2c7f">cargarArchivos</a> (char *p, char *io, char *prec, <a class="el" href="main_8c.html#ae9c041e3b674e3e95ba433e5125caee7">PROCESOSIN</a> *procesos, <a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a> *ios, <a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a> *precs)</td></tr>
+<tr class="memitem:a2f5894c98346b2b9be2d9419379a14b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a2f5894c98346b2b9be2d9419379a14b8">systemCalls</a> (<a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> procesos, <a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a> ios)</td></tr>
+<tr class="memitem:acd4424fa31ce9e51d4f27de8eb54b8f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#acd4424fa31ce9e51d4f27de8eb54b8f0">cargarSemaforos</a> (<a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a> precsIN, int pid)</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"></div><h2>Documentación de los 'typedefs'</h2>
+<a class="anchor" id="a155ec2884ea387316777240161aaaec1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a155ec2884ea387316777240161aaaec1">EVENTO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para alamacenar un evento de ocurrencia en la simulación </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fb6e405bfaf6969650fb28c723a8050"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de eventos </p>
+
+</div>
+</div>
+<a class="anchor" id="a24b891ec5c9b40c11f2b437d04a92941"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a24b891ec5c9b40c11f2b437d04a92941">IOIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para leer una línea del archivo de entrada de I/O (input) </p>
+
+</div>
+</div>
+<a class="anchor" id="a6ef836f8b05b02f2d786d75a8671f8b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de I/Os de entrada </p>
+
+</div>
+</div>
+<a class="anchor" id="ac08e0906f0646f91cd6f325f220297f9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#ac08e0906f0646f91cd6f325f220297f9">PRECIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para leer una línea del archivo de entrada de Precedencia (input) </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f3d96d9a7d9319fe20d8d1dba6526a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de reglas de precedencia de entrada </p>
+
+</div>
+</div>
+<a class="anchor" id="aedf4459c5d6ab78435f624d4bd6eb2be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#aedf4459c5d6ab78435f624d4bd6eb2be">PROCESO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para alamcenar un proceso que este activo en el sistema </p>
+
+</div>
+</div>
+<a class="anchor" id="a5411d5ef61ea7ba506592efa3880e84b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a5411d5ef61ea7ba506592efa3880e84b">PROCESOIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para leer una línea del archivo de entrada de procesos (input) </p>
+
+</div>
+</div>
+<a class="anchor" id="a688260058a6b9c7299f897ccb05b5c95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de procesos </p>
+
+</div>
+</div>
+<a class="anchor" id="ae9c041e3b674e3e95ba433e5125caee7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#ae9c041e3b674e3e95ba433e5125caee7">PROCESOSIN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de procesos de entrada </p>
+
+</div>
+</div>
+<a class="anchor" id="a3002dc26568aaf0f60cff5bfb578ed8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a3002dc26568aaf0f60cff5bfb578ed8a">SCALL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para almacenar un System Call </p>
+
+</div>
+</div>
+<a class="anchor" id="ad15da58dc1fa4eedb6bfbdc6d8a7071c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de System Calls </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f48068cecf7596209cd66168a6b3b7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a7f48068cecf7596209cd66168a6b3b7b">SEMAFORO</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para almacenar un semaforo </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a51ced83bcd69590e0ff937b704c461"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lista dinámica de semáforos Cada proceso tendrá asoiciado una lista de semáforos </p>
+
+</div>
+</div>
+<a class="anchor" id="accfa997805d0389fb12727fa1b4e06ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Estructura para almacenar información de indicadores del sistema </p>
+
+</div>
+</div>
+<h2>Documentación de las funciones</h2>
+<a class="anchor" id="a2fef611af54172ea114e4d20cdcc2c7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cargarArchivos </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>io</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>prec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#ae9c041e3b674e3e95ba433e5125caee7">PROCESOSIN</a> *&#160;</td>
+          <td class="paramname"><em>procesos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a> *&#160;</td>
+          <td class="paramname"><em>ios</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a> *&#160;</td>
+          <td class="paramname"><em>precs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga los archivos de texto a lista dinámicas para ser utilizados por el sistema. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Ruta del archivo de entrada de Procesos </td></tr>
+    <tr><td class="paramname">io</td><td>Ruta del archivo de entrada de I/O </td></tr>
+    <tr><td class="paramname">prec</td><td>Ruta del archivo de entrada de Precedencia </td></tr>
+    <tr><td class="paramname">procesos</td><td>Lista dinámica donde se cargan los Procesos </td></tr>
+    <tr><td class="paramname">ios</td><td>Lista dinámica donde se cargan las I/O </td></tr>
+    <tr><td class="paramname">precs</td><td>Lista dinámica donde se carga la Precedencia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve 1 si se cargaron los 3 archivos de forma correcta o 0 (cero) en otro caso </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd4424fa31ce9e51d4f27de8eb54b8f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a> cargarSemaforos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a7f3d96d9a7d9319fe20d8d1dba6526a2">PRECSIN</a>&#160;</td>
+          <td class="paramname"><em>precsIN</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A partir del archivo de Precedencia y un PID se generan los semaforos asociados al proceso </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">precsIN</td><td>Lista de Precedencia de los procesos. </td></tr>
+    <tr><td class="paramname">pid</td><td>PID del proceso del cual quiero obtener los semáforos asociados. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve una lista de semáforos asociados al PID. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86b6e73a12ec5268c6d2f764b6b19643"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int comprobarParametros </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Comprueba los parámetros de entrada del sistema. Entre las comprobaciones que realiza controla la cantidad, la validez y si algun parámetro esta repetido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Cantidad de argumentos recibidos en la ejecución </td></tr>
+    <tr><td class="paramname">argv</td><td>Arreglo con los argumentos recibidos en la ejecución </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve 1 si se comprueban los parámetros correctamente o 0 (cero) en otro caso </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8dc634d7f2c305460d3e53cd297e1469"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void escribirResultados </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a>&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a>&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Escribe los resultados de la simulación a archivos de texto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Lista de procesos </td></tr>
+    <tr><td class="paramname">e</td><td>Lista de eventos </td></tr>
+    <tr><td class="paramname">s</td><td>Estructura de Indicadores del Sistema </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adeb901890f8f07afb6322573a05934dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void imprimirAyuda </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Imprime la ayuda del sistema. La ayuda se ejecuta con el parámetro -h o &ndash;help pasado como argumento del programa en su ejecución </p>
+
+</div>
+</div>
+<a class="anchor" id="a618f02363b415bd8522450b2987df149"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insertarEvento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *&#160;</td>
+          <td class="paramname"><em>eventos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *&#160;</td>
+          <td class="paramname"><em>e</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inserta un evento en la lista de eventos a procesar por el simulador. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">eventos</td><td>Lista de eventos del simulador </td></tr>
+    <tr><td class="paramname">e</td><td>Evento nuevo a ingresar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función principal del programa. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Cantidad de argumentos recibidos en la ejecución </td></tr>
+    <tr><td class="paramname">argv</td><td>Arreglo con los argumentos recibidos en la ejecución </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve 0 (cero) si el programa finaliza con éxito </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a373f43ae39a081be78214373343ddc5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mostrarProcesos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a>&#160;</td>
+          <td class="paramname"><em>procesos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Muestra los PID de los procesos de una lista de procesos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">procesos</td><td>Lista de procesos a mostrar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8bc53714af69aa8b77fe5ac34a3d033f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void moverProceso </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *&#160;</td>
+          <td class="paramname"><em>destino</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *&#160;</td>
+          <td class="paramname"><em>origen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mueve un proceso de una cola de origen hacia una cola de destino. Dentro de las colas de procesos tanto de origen como de destino tambien se tiene en cuenta al cpu como una cola de un único proceso. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">destino</td><td>Cola destino a la que hay que agregar el proceso </td></tr>
+    <tr><td class="paramname">origen</td><td>Cola origen de la que hay que quitar el proceso </td></tr>
+    <tr><td class="paramname">pid</td><td>En el caso que el pid sea 0 (cero) moverá de origen el primer elemento, de lo contrario buscara el pid y ese es el que moverá </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acdd93f7da2ded902df7ee21d84174abc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#a1a51ced83bcd69590e0ff937b704c461">SEMAFOROS</a> obtenerSemaforos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a>&#160;</td>
+          <td class="paramname"><em>procesos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve una lista de semáforos asociados a un proceso determinado por su PID. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">procesos</td><td>Lista de procesos activos donde buscar </td></tr>
+    <tr><td class="paramname">pid</td><td>PID del proceso del que se quieren obtener los semáforos asociados </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve una lista de semáforos </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a59064b1fec1e4cfa6394ad4ae5b7ca8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void simular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a>&#160;</td>
+          <td class="paramname"><em>procesos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a>&#160;</td>
+          <td class="paramname"><em>scs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a>&#160;</td>
+          <td class="paramname"><em>eventos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pasoapaso</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a> *&#160;</td>
+          <td class="paramname"><em>rp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a0fb6e405bfaf6969650fb28c723a8050">EVENTOS</a> *&#160;</td>
+          <td class="paramname"><em>re</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#accfa997805d0389fb12727fa1b4e06ea">SYSIND</a> *&#160;</td>
+          <td class="paramname"><em>rs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LLeva adelante la simulación de la ejecución de los procesos de forma concurrente.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">procesos</td><td>Lista dinámica de los procesos que se van a simular </td></tr>
+    <tr><td class="paramname">scs</td><td>Lista dinámica de los System Call que se van a simular </td></tr>
+    <tr><td class="paramname">eventos</td><td>Lista incial de eventos que se van a simular </td></tr>
+    <tr><td class="paramname">pasoapaso</td><td>Contiene 1 si se debe mostrar paso a paso la simulación, de lo contrario 0 (cero) </td></tr>
+    <tr><td class="paramname">*rp</td><td>Puntero a una lista de procesos (de salida) </td></tr>
+    <tr><td class="paramname">*re</td><td>Puntero a una lista de eventos (de salida) </td></tr>
+    <tr><td class="paramname">*rs</td><td>Puntero a una lista de SYSIND (de salida) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f5894c98346b2b9be2d9419379a14b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="main_8c.html#ad15da58dc1fa4eedb6bfbdc6d8a7071c">SCALLS</a> systemCalls </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a688260058a6b9c7299f897ccb05b5c95">PROCESOS</a>&#160;</td>
+          <td class="paramname"><em>procesos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="main_8c.html#a6ef836f8b05b02f2d786d75a8671f8b7">IOSIN</a>&#160;</td>
+          <td class="paramname"><em>ios</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crea la lista de System Calls para ser utilizada durante la simulación. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">procesos</td><td>Lista de procesos con la información de sincronización </td></tr>
+    <tr><td class="paramname">ios</td><td>Lista de I/O de los procesos </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Devuelve una lista de System Calls </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Lunes, 4 de Noviembre de 2013 23:56:29 para Simulador de Planificador de Corto Plazo por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.1.2
+</small></address>
+</body>
+</html>

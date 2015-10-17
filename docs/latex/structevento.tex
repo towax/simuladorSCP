@@ -1,0 +1,39 @@
+\hypertarget{structevento}{\section{Referencia de la Estructura evento}
+\label{structevento}\index{evento@{evento}}
+}
+\subsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structevento_a8fbfa37705af883fec99b428586416b6}{instante}
+\item 
+int \hyperlink{structevento_ac3b0a8c87cce053e4200e7135398b9bb}{pid}
+\item 
+char \hyperlink{structevento_a3cccf0303093589ffa836df8f368bdef}{codigo} \mbox{[}4\mbox{]}
+\item 
+char \hyperlink{structevento_a7da79f66e192bd5ce943d984d676e126}{semaforo}
+\item 
+struct \hyperlink{structevento}{evento} $\ast$ \hyperlink{structevento_a2575b8410e413713cad01644e2ae6565}{sig}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los campos}
+\hypertarget{structevento_a3cccf0303093589ffa836df8f368bdef}{\index{evento@{evento}!codigo@{codigo}}
+\index{codigo@{codigo}!evento@{evento}}
+\subsubsection[{codigo}]{\setlength{\rightskip}{0pt plus 5cm}char evento\-::codigo\mbox{[}4\mbox{]}}}\label{structevento_a3cccf0303093589ffa836df8f368bdef}
+Código del evento \-: A\-N\-P,S\-I\-O,F\-I\-O,V,P,F\-P\-R \hypertarget{structevento_a8fbfa37705af883fec99b428586416b6}{\index{evento@{evento}!instante@{instante}}
+\index{instante@{instante}!evento@{evento}}
+\subsubsection[{instante}]{\setlength{\rightskip}{0pt plus 5cm}int evento\-::instante}}\label{structevento_a8fbfa37705af883fec99b428586416b6}
+Instante de ocurrencia del evento \hypertarget{structevento_ac3b0a8c87cce053e4200e7135398b9bb}{\index{evento@{evento}!pid@{pid}}
+\index{pid@{pid}!evento@{evento}}
+\subsubsection[{pid}]{\setlength{\rightskip}{0pt plus 5cm}int evento\-::pid}}\label{structevento_ac3b0a8c87cce053e4200e7135398b9bb}
+P\-I\-D que genero el evento \hypertarget{structevento_a7da79f66e192bd5ce943d984d676e126}{\index{evento@{evento}!semaforo@{semaforo}}
+\index{semaforo@{semaforo}!evento@{evento}}
+\subsubsection[{semaforo}]{\setlength{\rightskip}{0pt plus 5cm}char evento\-::semaforo}}\label{structevento_a7da79f66e192bd5ce943d984d676e126}
+Nombre del semáforo, en el caso de que el código se V o P \hypertarget{structevento_a2575b8410e413713cad01644e2ae6565}{\index{evento@{evento}!sig@{sig}}
+\index{sig@{sig}!evento@{evento}}
+\subsubsection[{sig}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf evento}$\ast$ evento\-::sig}}\label{structevento_a2575b8410e413713cad01644e2ae6565}
+Puntero al próximo evento 
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8c}{main.\-c}\end{DoxyCompactItemize}

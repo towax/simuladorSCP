@@ -1,0 +1,79 @@
+\hypertarget{structproceso}{\section{Referencia de la Estructura proceso}
+\label{structproceso}\index{proceso@{proceso}}
+}
+\subsection*{Campos de datos}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structproceso_a358bdb0efc4a75e0a843429ef7dfc33e}{pid}
+\item 
+int \hyperlink{structproceso_a7ec78adcdc6632a7b55b82188b44f76c}{tcpu}
+\item 
+int \hyperlink{structproceso_afa0af67b38696b6af251c7c6681a51bf}{necesidad}
+\item 
+int \hyperlink{structproceso_a658e84de456dc77674b4f1a69cfc0eca}{arribo}
+\item 
+int \hyperlink{structproceso_a55f899909bcb1ffc8b6c0d5e5eed0375}{cont\-Ios}
+\item 
+int \hyperlink{structproceso_a3e4710976da5407f04ed66ea96843d38}{turn\-Around}
+\item 
+int \hyperlink{structproceso_a5670b8181b821941450292e6b9088725}{t\-Resp}
+\item 
+int \hyperlink{structproceso_a261b77df7e4d69192d99695e215def2d}{t\-E\-Listos}
+\item 
+int \hyperlink{structproceso_a3d8d10b6de4414cfcc790f34596d2992}{t\-E\-Sync}
+\item 
+int \hyperlink{structproceso_aedc45b7bfd0247a2eae4e75ee8e89e63}{t\-E\-Total}
+\item 
+int \hyperlink{structproceso_ada33fb9deff92396af71daf15bd7e16e}{t\-E\-Disp}
+\item 
+\hyperlink{main_8c_a1a51ced83bcd69590e0ff937b704c461}{S\-E\-M\-A\-F\-O\-R\-O\-S} \hyperlink{structproceso_a969f47210353eb94475ffa944761943a}{semaforos}
+\item 
+struct \hyperlink{structproceso}{proceso} $\ast$ \hyperlink{structproceso_a527a2b7861991b9c7979d5c645352cc2}{sig}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los campos}
+\hypertarget{structproceso_a658e84de456dc77674b4f1a69cfc0eca}{\index{proceso@{proceso}!arribo@{arribo}}
+\index{arribo@{arribo}!proceso@{proceso}}
+\subsubsection[{arribo}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::arribo}}\label{structproceso_a658e84de456dc77674b4f1a69cfc0eca}
+Instante de arribo del proceso \hypertarget{structproceso_a55f899909bcb1ffc8b6c0d5e5eed0375}{\index{proceso@{proceso}!cont\-Ios@{cont\-Ios}}
+\index{cont\-Ios@{cont\-Ios}!proceso@{proceso}}
+\subsubsection[{cont\-Ios}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::cont\-Ios}}\label{structproceso_a55f899909bcb1ffc8b6c0d5e5eed0375}
+Cuenta la cantidad de I\-Os del proceso (para el Tiempo de Respuesta) \hypertarget{structproceso_afa0af67b38696b6af251c7c6681a51bf}{\index{proceso@{proceso}!necesidad@{necesidad}}
+\index{necesidad@{necesidad}!proceso@{proceso}}
+\subsubsection[{necesidad}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::necesidad}}\label{structproceso_afa0af67b38696b6af251c7c6681a51bf}
+Contiene la cantidad de ciclos de procesador que necesita el proceso para finalizar \hypertarget{structproceso_a358bdb0efc4a75e0a843429ef7dfc33e}{\index{proceso@{proceso}!pid@{pid}}
+\index{pid@{pid}!proceso@{proceso}}
+\subsubsection[{pid}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::pid}}\label{structproceso_a358bdb0efc4a75e0a843429ef7dfc33e}
+Identificador único del proceso \hypertarget{structproceso_a969f47210353eb94475ffa944761943a}{\index{proceso@{proceso}!semaforos@{semaforos}}
+\index{semaforos@{semaforos}!proceso@{proceso}}
+\subsubsection[{semaforos}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-E\-M\-A\-F\-O\-R\-O\-S} proceso\-::semaforos}}\label{structproceso_a969f47210353eb94475ffa944761943a}
+Lista dinámica de semáforos asociados al proceso \hypertarget{structproceso_a527a2b7861991b9c7979d5c645352cc2}{\index{proceso@{proceso}!sig@{sig}}
+\index{sig@{sig}!proceso@{proceso}}
+\subsubsection[{sig}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf proceso}$\ast$ proceso\-::sig}}\label{structproceso_a527a2b7861991b9c7979d5c645352cc2}
+Puntero al próximo proceso \hypertarget{structproceso_a7ec78adcdc6632a7b55b82188b44f76c}{\index{proceso@{proceso}!tcpu@{tcpu}}
+\index{tcpu@{tcpu}!proceso@{proceso}}
+\subsubsection[{tcpu}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::tcpu}}\label{structproceso_a7ec78adcdc6632a7b55b82188b44f76c}
+Contiene la necesidad incial de ciclos de procesador que necesita el proceso \hypertarget{structproceso_ada33fb9deff92396af71daf15bd7e16e}{\index{proceso@{proceso}!t\-E\-Disp@{t\-E\-Disp}}
+\index{t\-E\-Disp@{t\-E\-Disp}!proceso@{proceso}}
+\subsubsection[{t\-E\-Disp}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::t\-E\-Disp}}\label{structproceso_ada33fb9deff92396af71daf15bd7e16e}
+Tiempo de Uso de Dispositivos \hypertarget{structproceso_a261b77df7e4d69192d99695e215def2d}{\index{proceso@{proceso}!t\-E\-Listos@{t\-E\-Listos}}
+\index{t\-E\-Listos@{t\-E\-Listos}!proceso@{proceso}}
+\subsubsection[{t\-E\-Listos}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::t\-E\-Listos}}\label{structproceso_a261b77df7e4d69192d99695e215def2d}
+Tiempo de Espera en cola de Listos del proceso \hypertarget{structproceso_a3d8d10b6de4414cfcc790f34596d2992}{\index{proceso@{proceso}!t\-E\-Sync@{t\-E\-Sync}}
+\index{t\-E\-Sync@{t\-E\-Sync}!proceso@{proceso}}
+\subsubsection[{t\-E\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::t\-E\-Sync}}\label{structproceso_a3d8d10b6de4414cfcc790f34596d2992}
+Tiempo de Espera en cola de bloqueados por sincronización del proceso \hypertarget{structproceso_aedc45b7bfd0247a2eae4e75ee8e89e63}{\index{proceso@{proceso}!t\-E\-Total@{t\-E\-Total}}
+\index{t\-E\-Total@{t\-E\-Total}!proceso@{proceso}}
+\subsubsection[{t\-E\-Total}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::t\-E\-Total}}\label{structproceso_aedc45b7bfd0247a2eae4e75ee8e89e63}
+Tiempo de Espera Total del proceso \hypertarget{structproceso_a5670b8181b821941450292e6b9088725}{\index{proceso@{proceso}!t\-Resp@{t\-Resp}}
+\index{t\-Resp@{t\-Resp}!proceso@{proceso}}
+\subsubsection[{t\-Resp}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::t\-Resp}}\label{structproceso_a5670b8181b821941450292e6b9088725}
+Tiempo de Respuesta del proceso \hypertarget{structproceso_a3e4710976da5407f04ed66ea96843d38}{\index{proceso@{proceso}!turn\-Around@{turn\-Around}}
+\index{turn\-Around@{turn\-Around}!proceso@{proceso}}
+\subsubsection[{turn\-Around}]{\setlength{\rightskip}{0pt plus 5cm}int proceso\-::turn\-Around}}\label{structproceso_a3e4710976da5407f04ed66ea96843d38}
+Turn\-Around del proceso 
+
+La documentación para esta estructura fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{main_8c}{main.\-c}\end{DoxyCompactItemize}
