@@ -1,0 +1,6 @@
+Archivo generado automaticamente por el simulador...
+
+PID		TURNAROUND	T° RESP		T° E LISTOS	T° E SYNC	T° E DISP	T° E TOTAL
+0002		15		15		6		0		0		6
+1001		26		4		8		3		5		16
+0001		28		6		9		7		4		20

@@ -1,0 +1,6 @@
+Archivo generado automaticamente por el simulador...
+
+TurnAround Promedio = -9581140292484411205506564096.00
+Tiempo de Respuesta Promedio = 8.33
+Tiempo de Espera en Listos Promedio = -12123500075513579544506269696.00
+Timepo de Espera por Sync Promedio = 3.33

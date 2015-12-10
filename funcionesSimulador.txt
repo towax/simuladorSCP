@@ -1,0 +1,18 @@
+D DONE
+IP <integrante> IN PROGRESS
+
+
+
+* insertarEvento	(Inserta un evento a la lista de eventos a procesar por el simulador)
+* moverProceso		(Mueve un proceso de una cola de origen a una cola de destino)
+* mostrarProceso 	(Muestra los PID de los procesos de una lista de procesos)
+* obtenerSemaforo 	(Devuelve una lista de semáforos asociados a un proceso determinado por su PID)
+* simular 		(lleva adelante la simulación de la ejecución de los procesos de forma concurrente)
+* escribirResultados 	(Devuelve los resultados de la simulaciwón en archivo de texto)
+D imprimirAyuda 	(Imprime la ayuda del sistema)
+* comprobarParametros 	(Comprueba los parametros de lentrada del sistema)
+* cargarArchivos 	(Carga los archivos de texto a listas dinamicas para ser usados por el sistema)
+* systemcalls 		(Crea lista de SC para ser usada durante la simulación)
+* cargarSemaforos 	(A paetir del archivo de precedencia y un PID, se generan los semaforos asociados al proceso)
+* validarDatos 		(Funcion que valida datos de entrada)
+* main 			(Funcion principal del programa)

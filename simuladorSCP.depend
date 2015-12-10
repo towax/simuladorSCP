@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1449713816 source:/home/tuni/ucaece/sistemasOperativos/simuladorSCP/main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	"scpstruc.h"
+	"scpfunc.h"
+
+1449711349 /home/tuni/ucaece/sistemasOperativos/simuladorSCP/scpstruc.h
+
+1449714673 /home/tuni/ucaece/sistemasOperativos/simuladorSCP/scpfunc.h
+
